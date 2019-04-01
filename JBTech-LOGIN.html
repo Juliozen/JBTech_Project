@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta content="text/html; charset=iso-8859-2" http-equiv="Content-Type">
+	<!-- LINK - TAG responsável pela importação do arquivo e dependências de ESTILO do site -->
+	<link rel="stylesheet" type="text/css" href="grid.css">
+	<link rel="stylesheet" type="text/css" href="css-LOGIN.css">
+
+	<!-- TAG SCRIPT - RESPONSÁVEL POR EFETUAR A IMPORTAÇÃO DA BIBLIOTECA de manipulação de DOM com javascript - JQUERY -->
+	<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+	<!-- TAG RESPONSÁVEL POR CHAMAR O ICONE NA ABA DO NAVEGADOR -->
+	<link rel="shortcut icon" href="produtos/logo.png" >
+
+	<!-- TAG TITLE - Responsável por inserir o título na ABA do NAVEGADOR e em sistemas de busca (GOOGLE search engine) -->
+	<title>Marketplace JBTech - Produtos de Informática para Gamers</title>
+</head>
+
+<body>
+	<div id="container">
+		<!-- DIV REPOSNSÁVEL PELO MENU SUPERIOR PRIMÁRIO - CONTEM O BOTÃO DE LOGIN E CADASTRO DA PLATAFORMA JBTech-->
+		<div class="linha fundomenucadastro">
+			<!-- DIV RESPONSÁVEL POR CARREGAR A TAG DA IMAGEM QUE CONTERÁ A LOGO DO SITE -->
+			<div class="c3 logo">
+				<a href="index.html">
+					<img src="produtos/logo.png">
+				</a>
+			</div>
+			<div class="tright menucadastro btn-group">
+				<a href="index.html">
+					<button class="button">Página Inicial</button>
+				</a>
+			</div>
+		
+		</div>
+		<!-- DIV RESPONSÁVEL PELA DIVISÃO / EFEITO BORDA ENTRE OS COMPONENTES-->
+		<div class="borda">
+		</div>
+
+		<div class="linha fundomenu">
+			<div class="menu btn-group">
+				<a href="index.html#produtos">
+					<button class="button">Todos os Produtos</button>
+				</a>
+				<a href="#sobre">
+					<button class="button">Sobre</button>
+				</a>
+				<a href="#contato">
+					<button class="button">Contato</button>
+				</a>
+			</div>
+		</div>
+<!-- DIV RESPONSÁVEL PELA DIVISÃO / EFEITO BORDA ENTRE OS COMPONENTES-->
+		<div class="borda">
+		</div>
+
+<!-- DIV do formulário principal, contém: LOGIN, REGISTRO ou RECUPERAÇÃO DE SENHA -->
+<div id="formContainer">
+	<div id="form">
+		<div id="formLeft" class="f">
+			<img src="imagens/man-user.png" alt="Avatar Picture">
+			<h2>Entre com seu usuário</h2>
+		</div>
+		<div id="formRight">
+			<form id="forgot" class="contentArea otherForm">
+				<div class="formHead">
+					<h1>Esqueceu sua senha?</h1>
+					<p>Para recuperar é fácil. Basta inserir o e-mail que efetuou
+					</br> o registro da conta que enviaremos uma nova senha</p>
+				</div>
+				<label class="formDiv">
+					<input type="email" placeholder=" " required>
+					<p>Digite seu e-mail cadastrado</p>
+					<span class="border"></span>
+				</label>
+				<div class="formDiv">
+					<input type="submit" value="Me envie uma nova senha">
+				</div>
+				<footer>
+					<p class="forgotBtn">Lembrei minha senha</p>
+				</footer>
+			</form>
+			<form id="register" class="contentArea otherForm">
+				<div class="formHead">
+					<h1>Venda seus produtos </br> hoje mesmo!</h1>
+					<p>Registre-se para ganhar acesso total </br>
+						a plataforma
+					</p>
+				</div>
+				<label class="formDiv">
+					<input type="text" placeholder=" ">
+					<p>Nome de Usuário</p>
+					<span class="border"></span>
+				</label>
+				<label class="formDiv">
+					<input type="email" placeholder=" ">
+					<p>E-mail</p>
+					<span class="border"></span>
+				</label>
+				<label class="formDiv">
+					<input type="password" placeholder=" ">
+					<p>Senha</p>
+					<span class="border"></span>
+				</label>
+				<div class="formDiv">
+					<input type="submit" value="Cadastrar">
+				</div>
+				<footer>
+					<p class="registerBtn">Já sou Cadastrado</p>
+				</footer>
+			</form>
+			<form class="contentArea" id="login">
+				<div class="formHead">
+					<h1>Bem vindo</h1>
+					<p>Login para continuar</p>
+				</div>
+				<label class="formDiv">
+					<input type="text" placeholder=" " required>
+					<p>Usuário de acesso</p>
+					<span class="border"></span>
+				</label>
+				<label class="formDiv">
+					<input type="password" placeholder=" " required>
+					<p>Senha</p>
+					<span class="border"></span>
+				</label>
+				<div class="formDiv">
+					<input type="submit" value="Entrar">
+				</div>
+				<!-- Rodapé do formulário interativo -->
+				<footer>
+					<p class="forgotBtn">Esqueceu sua senha?</p>
+					<p class="registerBtn">Ainda não possui usuário?</p>
+				</footer>
+			</form>
+		</div>
+	</div>
+</div>
+<script type="text/javascript">
+// javascript e chamadas JQuery
+$(function() {
+
+	// botão de ação troca para div de esqueceu sua senha
+	$('.forgotBtn').click(function() {
+		$('#forgot').toggleClass('toggle');
+	});
+	
+	// botão de ação troca para div de registro
+	$('.registerBtn').click(function() {
+		$('#register, #form').toggleClass('toggle');
+	});
+
+});
+
+
+</script>
+<!-- DIV RESPONSÁVEL PELO FOOTER, normalmente usado para informar Localização, credenciais e telefone e contato para suporte da plataforma, loja ou afins. 
+No nosso caso apenas contém o nome dos criadores -->
+	<div class="linha rodape">
+		<div class="c12 tcenter">
+			Julio Müller & Bruno da Paz
+		</div>
+	</div>
+
+</body>
+
+</html>

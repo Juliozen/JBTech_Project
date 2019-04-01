@@ -1,0 +1,397 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-family: arial;
+	color: #666;
+}
+/*ID principal. Do bloco principal da estrutura do site. Contem: o header, o banner principal e a lista de produtos*/
+#container{
+	width: 100%; 
+    height: 100%;
+	background-color: #fff;
+}
+/*Classe responsável pelo header que direciona para o formulário de cadastro de usuários e login de user*/
+.menucadastro {
+	height: 50px;
+	float: right;
+}
+/*Classe responsável pelo menu superior de opções/ header*/
+.menu {
+	height: 50px;
+	float: left;
+}
+/*Classe responsável pelo espaçamento ou efeito de borda entre o menucadastro/*/
+.borda{
+	padding: 1px;
+}
+/*Classe responsável pelo background e altura do header*/
+.fundomenucadastro{
+	background-color: #000;
+	height: 60px;
+}
+/*Classe responsável para cor do menu header secundário no caso de querer que os 2 
+tenham cores diferentes e não compartilhem a mesma cor*/
+.fundomenu{
+	background-color: #000;
+	height: 60px;
+}
+.menu {
+	font-size: 13px;
+}
+/*Classe responsável por manipular o li do menu*/
+.menu li {
+	float: right;
+	margin-right: 20px;
+	line-height: 60px;
+}
+.menu li {
+	list-style: none;  /* remove bolinha da lista 
+}
+
+.menu a {
+	color: #fff;
+	text-decoration: none; /* tira sublinhado 
+}
+
+.menu a:hover {
+	color: #fc8779;
+	text-decoration: none; /* tira sublinhado */
+}
+/*Classe responsável pela margin e posicionamento da LOGO MARCA do site*/
+.logo{
+	float: left;
+	margin-top: 5px;
+	margin-left: 25px;
+}
+/*class responsável pela manipulação do banner de promoções e destaques*/
+.destaque {
+	background: #353637;
+	font-size: 25px;
+	color: #fff;
+	text-align: center;
+	clear: both;
+}
+/*experimento, não está sendo usado realmente*/
+.botaodestaque{
+	box-shadow: 2px 2px 3px #000;
+	text-shadow: -2px 1px 2px #000;
+	height: 50px;
+	width: 120px;
+	font-size: 20px;
+	background-color: #fc8779;
+	border-radius: 5px;
+	color: #fff;
+	margin-top: 30px;
+	border-color: #000;
+}
+
+
+/*//footer da página, normalmente contem informações da empresa, contato e outros dados. 
+No nosso caso somente o nome dos criadores*/
+.rodape {
+	background: #353637;
+	height: 50px;
+	color: #fff;
+	text-align: center;
+	line-height: 50px;  /*  altura da linha  */
+	clear: both;
+}
+
+/*class responsável por manipular o estilo dos botões principais do site, incluindo os botões do menu HEADER*/
+.btn-group .button {
+	background-color: #000;
+	border: none;
+	color: white;
+	padding: 15px 32px;
+	height: 60px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	cursor: pointer;
+  }
+  /*classe responsável por deixar no mesmo hexadecimal da Logo Marca ao passar o mouse em cima*/
+  .btn-group .button:hover {
+	background-color: #65a995;
+  }
+@import url("https://fonts.googleapis.com/css?family=Nunito:300,400,600,700,800");
+* {
+  outline-width: 0;
+  font-family: 'Nunito';
+}
+
+body {
+  height: 100vh;
+}
+
+#formContainer {
+  width: 100%;
+  height: 100%;
+  background: url("https://images.unsplash.com/photo-1508780709619-79562169bc64?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80") center;
+  background-attachment: fixed !important;
+  background-size: cover !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#login {
+  transition: 0.2s ease;
+  opacity: 1;
+  visibility: visible;
+}
+#login.register {
+  -webkit-transform: scale(0.8, 0.8);
+          transform: scale(0.8, 0.8);
+  opacity: 0;
+  visibility: hidden;
+}
+
+#form {
+  display: flex;
+  overflow: hidden;
+  border-radius: 3px;
+  transition: 0.2s ease;
+  height: 329px;
+  transition-delay: 0.5s;
+}
+#form.toggle {
+  height: 400px;
+  transition-delay: 0.25s;
+}
+
+#formLeft {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+  padding: 0 50px;
+  box-sizing: border-box;
+}
+#formLeft img {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3), 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+#formLeft h2 {
+  color: #444;
+  margin-bottom: 0;
+}
+
+#formRight {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+#formRight:before {
+  content: "";
+  background: url("https://source.unsplash.com/2560x1440/daily") center;
+  background-attachment: fixed !important;
+  background-size: cover !important;
+  position: absolute;
+  display: block;
+  width: 120%;
+  height: 120%;
+  top: -10%;
+  left: -10%;
+  box-shadow: inset 0 0 0 300px rgba(0, 0, 0, 0.5);
+  -webkit-filter: blur(10px);
+          filter: blur(10px);
+}
+#formRight .contentArea {
+  padding: 15px;
+  box-sizing: border-box;
+  width: 350px;
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  white-space: nowrap;
+  top: 0;
+  left: 0;
+}
+
+.formHead {
+  position: relative;
+  padding-bottom: 30px;
+  text-align: center;
+}
+.formHead h1 {
+  font-weight: bold;
+  color: #fff;
+  margin: 0;
+}
+.formHead p {
+  margin: 0;
+  color: #fff;
+  opacity: .5;
+  font-weight: 700;
+  font-size: 12px;
+}
+
+div.formDiv {
+  position: relative;
+  margin-bottom: 10px;
+  z-index: 2;
+  width: 100%;
+}
+div.formDiv input {
+  background: #3B5998;
+  border: none;
+  width: 100%;
+  padding: 10px 0;
+  text-align: center;
+  color: #fff;
+  font-weight: 800;
+  border-radius: 3px;
+  cursor: pointer;
+  font-family: 'Nunito';
+  transition: 0.2s ease;
+}
+div.formDiv input:hover {
+  background: #344e86;
+}
+
+label.formDiv {
+  position: relative;
+  width: 100%;
+  margin-top: 15px;
+  margin-bottom: 25px;
+  display: block;
+  z-index: 2;
+}
+label.formDiv p {
+  margin: 0;
+  color: #fff;
+  font-weight: 700;
+  font-size: 16px;
+  opacity: .5;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  transition: 0.2s ease;
+  z-index: 1;
+}
+label.formDiv input {
+  width: 100%;
+  background: transparent;
+  border: none;
+  box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.3);
+  padding: 10px 0;
+  box-sizing: border-box;
+  transition: 0.2s ease;
+  color: #fff;
+  position: relative;
+  font-family: 'Nunito';
+  font-weight: 600;
+  z-index: 2;
+  position: relative;
+}
+label.formDiv input:placeholder-shown ~ p {
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  font-size: 16px;
+}
+label.formDiv input:not(:placeholder-shown) ~ p {
+  top: -10px;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  font-size: 12px;
+}
+label.formDiv input:focus ~ .border {
+  -webkit-transform: scale(1, 1);
+          transform: scale(1, 1);
+}
+label.formDiv input:focus ~ p {
+  top: -10px;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  font-size: 12px;
+}
+label.formDiv .border {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: #fff;
+  -webkit-transform: scale(0, 1);
+          transform: scale(0, 1);
+  transition: 0.2s ease;
+}
+label.formDiv:last-child {
+  margin-bottom: 0;
+}
+
+footer {
+  position: relative;
+  display: flex;
+  width: 100%;
+}
+footer p {
+  width: 100%;
+  color: #fff;
+  opacity: .5;
+  margin: 0;
+  text-align: center;
+  cursor: pointer;
+  font-weight: 800;
+  font-size: 12px;
+  transition: 0.2s ease;
+}
+footer p:hover {
+  opacity: 1;
+}
+
+.otherForm {
+  position: absolute !important;
+  width: 0% !important;
+  height: 100% !important;
+  background: #fff;
+  z-index: 2 !important;
+  overflow: hidden;
+  padding: 15px 0 !important;
+  visibility: hidden;
+  transition: 0.4s ease;
+  transition-delay: 0.4s;
+  border-left: 1px solid #eee;
+}
+.otherForm .formHead {
+  margin-top: 10px;
+}
+.otherForm .formHead h1, .otherForm .formHead p {
+  color: #000;
+}
+.otherForm .formHead, .otherForm .formDiv, .otherForm footer {
+  opacity: 0;
+  transition: 0.2s ease;
+  transition-delay: 0.2s;
+}
+.otherForm .border {
+  background: #000 !important;
+}
+.otherForm input[type="text"], .otherForm input[type="email"], .otherForm input[type="password"] {
+  box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.3);
+  color: #000;
+}
+.otherForm p {
+  color: #000 !important;
+}
+.otherForm.toggle {
+  width: 100% !important;
+  padding: 15px !important;
+  visibility: visible !important;
+  transition-delay: 0s;
+}
+.otherForm.toggle .formHead, .otherForm.toggle .formDiv, .otherForm.toggle footer {
+  margin-top: 0;
+  opacity: 1;
+  transition-delay: 0.4s;
+}

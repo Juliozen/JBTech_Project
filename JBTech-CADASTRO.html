@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta content="text/html; charset=iso-8859-2" http-equiv="Content-Type">
+	<link rel="stylesheet" type="text/css" href="grid.css">
+	<link rel="stylesheet" type="text/css" href="css-LOGIN.css">
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+	<title>JBTech</title>
+</head>
+
+<body>
+	<div id="container">
+		<!-- DIV REPOSNSÁVEL PELO MENU SUPERIOR PRIMÁRIO - CONTEM O BOTÃO DE LOGIN E CADASTRO DA PLATAFORMA JBTech-->
+		<div class="linha fundomenucadastro">
+			<!-- DIV RESPONSÁVEL POR CARREGAR A TAG DA IMAGEM QUE CONTERÁ A LOGO DO SITE -->
+			<div class="c3 logo">
+				<a href="index.html">
+					<img src="produtos/logo.png">
+				</a>
+			</div>
+			<div class="tright menucadastro btn-group">
+				<a href="#">
+					<button class="button">Login</button>
+				</a>
+			</div>
+			<div class="tright menucadastro btn-group">
+				<button class="button">Começar a Anunciar</button>
+			</div>
+		</div>
+
+		<div class="borda">
+		</div>
+
+		<div class="linha fundomenu">
+			<div class="menu btn-group">
+				<a href="#">
+					<button class="button">Principal</button>
+				</a>
+				<a href="#produtos">
+					<button class="button">Consulta</button>
+				</a>
+				<a href="#sobre">
+					<button class="button">Sobre</button>
+				</a>
+				<a href="#contato">
+					<button class="button">Contato</button>
+				</a>
+			</div>
+		</div>
+
+		<div class="borda">
+		</div>
+
+
+<div id="formContainer">
+	<div id="form">
+		<div id="formLeft" class="f">
+			<img src="https://pbs.twimg.com/profile_images/1044222938474397696/TtNO9cun_400x400.jpg" alt="Avatar Picture">
+			<h2>Gibbu</h2>
+		</div>
+		<div id="formRight">
+			<form id="forgot" class="contentArea otherForm">
+				<div class="formHead">
+					<h1>Forgot Password?</h1>
+					<p>Looks like you forgot your password</p>
+				</div>
+				<label class="formDiv">
+					<input type="email" placeholder=" " required>
+					<p>Type your Email</p>
+					<span class="border"></span>
+				</label>
+				<div class="formDiv">
+					<input type="submit" value="Send">
+				</div>
+				<footer>
+					<p class="forgotBtn">Back to Login</p>
+				</footer>
+			</form>
+			<form id="register" class="contentArea otherForm">
+				<div class="formHead">
+					<h1>BECOME A BRO</h1>
+					<p>Register to gain full access</p>
+				</div>
+				<label class="formDiv">
+					<input type="text" placeholder=" ">
+					<p>Username</p>
+					<span class="border"></span>
+				</label>
+				<label class="formDiv">
+					<input type="email" placeholder=" ">
+					<p>Email</p>
+					<span class="border"></span>
+				</label>
+				<label class="formDiv">
+					<input type="password" placeholder=" ">
+					<p>Password</p>
+					<span class="border"></span>
+				</label>
+				<div class="formDiv">
+					<input type="submit" value="Register">
+				</div>
+				<footer>
+					<p class="registerBtn">Back to login</p>
+				</footer>
+			</form>
+			<form class="contentArea" id="login">
+				<div class="formHead">
+					<h1>Seja bem vindo de volta</h1>
+					<p>Login para continuar</p>
+				</div>
+				<label class="formDiv">
+					<input type="text" placeholder=" " required>
+					<p>Usuário de acesso</p>
+					<span class="border"></span>
+				</label>
+				<label class="formDiv">
+					<input type="password" placeholder=" " required>
+					<p>Senha</p>
+					<span class="border"></span>
+				</label>
+				<div class="formDiv">
+					<input type="submit" value="Login">
+				</div>
+				<footer>
+					<p class="forgotBtn">Esqueceu sua senha?</p>
+					<a href="#">
+					<p class="registerBtn">Ainda não possui usuário?</p>
+				</a>
+				</footer>
+			</form>
+		</div>
+	</div>
+</div>
+<script type="text/javascript">
+// jQuery
+$(function() {
+
+	// Switch to Forgot Password
+	$('.forgotBtn').click(function() {
+		$('#forgot').toggleClass('toggle');
+	});
+	
+	// Switch to Register
+	$('.registerBtn').click(function() {
+		$('#register, #form').toggleClass('toggle');
+	});
+
+});
+
+
+</script>
+<!-- DIV RESPONSÁVEL PELO FOOTER, normalmente usado para informar Localização, credenciais e telefone e contato para suporte da plataforma, loja ou afins. 
+No nosso caso apenas contém o nome dos criadores -->
+	<div class="linha rodape">
+		<div class="c12 tcenter">
+			Bruno da Paz e Julio Muller
+		</div>
+	</div>
+
+</body>
+
+</html>

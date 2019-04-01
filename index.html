@@ -2,43 +2,56 @@
 <html>
 
 <head>
+	<!-- TAG RESPONSÁVEL PELA FORMATAÇÃO DO TEXTO NO PADRÃO UTF8 -->
 	<meta charset="UTF-8">
-	<meta content="text/html; charset=iso-8859-2" http-equiv="Content-Type">´
+	<meta content="text/html; charset=iso-8859-2" http-equiv="Content-Type">
+		<!-- LINK - TAG responsável pela importação do arquivo e dependências de ESTILO do site -->
 	<link rel="stylesheet" type="text/css" href="grid.css">
 	<link rel="stylesheet" type="text/css" href="estilos.css">
-	<title>JBTech</title>
-</head>
 
+
+	<!-- TAG RESPONSÁVEL POR CHAMAR O ICONE NA ABA DO NAVEGADOR -->
+	<link rel="shortcut icon" href="produtos/logo.png" >
+
+	<!-- TAG TITLE - Responsável por inserir o título na ABA do NAVEGADOR e em sistemas de busca (GOOGLE search engine) -->
+	<title>Marketplace JBTech - Produtos de Informática para Gamers</title>
+</head>
+<!-- TAG BODY - Corpo principal da aplicação web -->
 <body>
 	<div id="container">
+		<!-- DIV REPOSNSÁVEL PELO MENU SUPERIOR PRIMÁRIO - CONTEM O BOTÃO DE LOGIN E CADASTRO DA PLATAFORMA JBTech-->
 		<div class="linha fundomenucadastro">
+			<!-- DIV RESPONSÁVEL POR CARREGAR A TAG DA IMAGEM QUE CONTERÁ A LOGO DO SITE -->
 			<div class="c3 logo">
-				<a href="#">
+				<!-- TAG responsável por REDIRECIONAR USUÁRIO DE VOLTA PARA A HOME / INÍCIO DO SITE -->
+				<a href="index.html">
+					<!-- TAG RESPONSÁVEL POR CARREGAMENTO DA IMAGEM DA LOGO-MARCA DA PLATAFORMA -->
 					<img src="produtos/logo.png">
 				</a>
 			</div>
 			<div class="tright menucadastro btn-group">
-				<a href="#">
-					<button class="button">Home</button>
+				<a href="JBTech-LOGIN.html">
+					<button class="button">Login</button>
 				</a>
 			</div>
 			<div class="tright menucadastro btn-group">
-				<button class="button">Cadastro</button>
+					<a href="JBTech-LOGIN.html">
+				<button class="button">Começar a Anunciar</button>
+				</a>
 			</div>
 		</div>
-
+		<!-- DIV RESPONSÁVEL PELA DIVISÃO / EFEITO BORDA ENTRE OS COMPONENTES-->
 		<div class="borda">
 		</div>
-
+<!-- DIV RESPONSÁVEL PELO MENU DE OPÇÕES ABAIXO DO HEADER  -->
 		<div class="linha fundomenu">
 			<div class="menu btn-group">
-				<a href="#">
-					<button class="button">Principal</button>
-				</a>
+				<!-- TAG <A><A/> serve para referenciar LINKS e redirecionamentos -->
 				<a href="#produtos">
-					<button class="button">Consulta</button>
+					<button class="button">Todos o Produtos</button>
 				</a>
 				<a href="#sobre">
+					<!-- TAG BUTTON SERVE PARA RENDERIZAR BOTÕES HTML -->
 					<button class="button">Sobre</button>
 				</a>
 				<a href="#contato">
@@ -47,11 +60,14 @@
 			</div>
 		</div>
 
+		<!-- DIV RESPONSÁVEL PELA DIVISÃO / EFEITO BORDA ENTRE OS COMPONENTES-->
 		<div class="borda">
 		</div>
 
+		<!-- DIV RESPONSÁVEL PELOS BANNERS DE DESTAQUES E PROMOÇÕES -->
 		<div class="linha destaque">
 			<div class="secao">
+				<!-- TAG responsável pela chamada das Imagens dos BANNERS -->
 				<img class="mySlides" src="produtos/Banner01.png">
 				<img class="mySlides" src="produtos/Banner02.png">
 				<img class="mySlides" src="produtos/Banner03.png">
@@ -59,6 +75,7 @@
 		</div>
 
 		<script>
+		// script responsável pelo efeito CAROUSEL dos BANNERS de anúncio
 			var myIndex = 0;
 			carousel();
 
@@ -87,6 +104,7 @@
 			}
 		</script>
 
+<!-- div responsável pelo TÍTULO da lista de produtos -->
 		<div>
 			<a name="produtos">
 				<div class="titulonegrito">
@@ -94,7 +112,8 @@
 				</div>
 			</a>
 		</div>
-
+<!-- Como os produtos estão sendo gerados de maneira estática fizemos uma div para cada produto, cada uma destas representa 1 produto -->
+<!-- PRODUTO 1 -->
 		<div>
 			<div class="c3 imagem" style="background-image: url(produtos/Produto01.jpg)">
 				<div class="imgConteudo imagemsecundaria">
@@ -102,6 +121,7 @@
 				</div>
 			</div>
 		</div>
+		<!-- PRODUTO 2 -->
 		<div>
 			<div class="c3 imagem" style="background-image: url(produtos/Produto02.jpg)">
 				<div class="imgConteudo imagemsecundaria">
@@ -109,6 +129,7 @@
 				</div>
 			</div>
 		</div>
+		<!-- PRODUTO 3 -->
 		<div>
 			<div class="c3 imagem" style="background-image: url(produtos/Produto03.jpg)">
 				<div class="imgConteudo imagemsecundaria">
@@ -116,6 +137,7 @@
 				</div>
 			</div>
 		</div>
+		<!-- PRODUTO 4 -->
 		<div>
 			<div class="c3 imagem" style="background-image: url(produtos/Produto04.jpg)">
 				<div class="imgConteudo imagemsecundaria">
@@ -123,6 +145,7 @@
 				</div>
 			</div>
 		</div>
+		<!-- PRODUTO 5 -->
 		<div>
 			<div class="c3 imagem" style="background-image: url(produtos/Produto05.jpg)">
 				<div class="imgConteudo imagemsecundaria">
@@ -130,6 +153,7 @@
 				</div>
 			</div>
 		</div>
+		<!-- PRODUTO 6 -->
 		<div>
 			<div class="c3 imagem" style="background-image: url(produtos/Produto06.jpg)">
 				<div class="imgConteudo imagemsecundaria">
@@ -137,6 +161,7 @@
 				</div>
 			</div>
 		</div>
+		<!-- PRODUTO 7 -->
 		<div>
 			<div class="c3 imagem" style="background-image: url(produtos/Produto07.jpg)">
 				<div class="imgConteudo imagemsecundaria">
@@ -144,6 +169,7 @@
 				</div>
 			</div>
 		</div>
+		<!-- PRODUTO 8 -->
 		<div>
 			<div class="c3 imagem" style="background-image: url(produtos/Produto08.jpg)">
 				<div class="imgConteudo imagemsecundaria">
@@ -151,7 +177,7 @@
 				</div>
 			</div>
 		</div>
-
+<!-- div responsável pelo título antecessor ao grid que EXPLICA sobre o Market Place JBTech -->
 		<div class="linha titulo">
 			<a name="sobre">
 				<div class="">
@@ -159,15 +185,16 @@
 				</div>
 			</a>
 		</div>
-
+<!-- DIV RESPONSÁVEL POR CONTER OS TEXTOS DO GRID A RESPEITO DA PLAFATORMA JBTech -->
 		<div class="linha servico">
+			<!-- DIV RESPONSÁVEL POR ALINHAR E ESTILIZAR O TEXTO SOBRE A PLATAFORMA -->
 			<div class="textosobre tcenter">
 				<p>Marketplace focado em vendas online de acessórios para o setor de informática.
 					<br>À missão de oferecer sempre os melhores produtos e acessórios de sua necessidade.
 				</p>
 			</div>
 		</div>
-		
+		<!-- DIV RESPONSÁVEL POR CONTER OS TEXTOS DO GRID A RESPEITO DA PLAFATORMA JBTech -->
 		<div class="linha servico">
 			<div class="c4 servicodiv tcenter">
 				<img src="produtos/mouse.png">
@@ -192,7 +219,8 @@
 			</div>
 		</div>
 	</div>
-
+<!-- DIV RESPONSÁVEL PELO FOOTER, normalmente usado para informar Localização, credenciais e telefone e contato para suporte da plataforma, loja ou afins. 
+No nosso caso apenas contém o nome dos criadores -->
 	<div class="linha rodape">
 		<div class="c12 tcenter">
 			Bruno da Paz e Julio Muller

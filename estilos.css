@@ -4,25 +4,33 @@ body {
 	font-family: arial;
 	color: #666;
 }
+/*ID principal. Do bloco principal da estrutura do site. Contem: o header, o banner principal e a lista de produtos*/
 #container{
-	width: 80%;
+	width: 100%; 
+    height: 100%;
 	background-color: #fff;
 }
+/*Classe responsável pelo header que direciona para o formulário de cadastro de usuários e login de user*/
 .menucadastro {
 	height: 50px;
 	float: right;
 }
+/*Classe responsável pelo menu superior de opções/ header*/
 .menu {
 	height: 50px;
 	float: left;
 }
+/*Classe responsável pelo espaçamento ou efeito de borda entre o menucadastro/*/
 .borda{
 	padding: 1px;
 }
+/*Classe responsável pelo background e altura do header*/
 .fundomenucadastro{
 	background-color: #000;
 	height: 60px;
 }
+/*Classe responsável para cor do menu header secundário no caso de querer que os 2 
+tenham cores diferentes e não compartilhem a mesma cor*/
 .fundomenu{
 	background-color: #000;
 	height: 60px;
@@ -30,32 +38,32 @@ body {
 .menu {
 	font-size: 13px;
 }
-
+/*Classe responsável por manipular o li do menu*/
 .menu li {
 	float: right;
 	margin-right: 20px;
 	line-height: 60px;
 }
 .menu li {
-	list-style: none;  /* remove bolinha da lista */
+	list-style: none;  /* remove bolinha da lista 
 }
 
 .menu a {
 	color: #fff;
-	text-decoration: none; /* tira sublinhado */
+	text-decoration: none; /* tira sublinhado 
 }
 
 .menu a:hover {
 	color: #fc8779;
 	text-decoration: none; /* tira sublinhado */
 }
-
+/*Classe responsável pela margin e posicionamento da LOGO MARCA do site*/
 .logo{
 	float: left;
 	margin-top: 5px;
 	margin-left: 25px;
 }
-
+/*class responsável pela manipulação do banner de promoções e destaques*/
 .destaque {
 	background: #353637;
 	font-size: 25px;
@@ -63,7 +71,7 @@ body {
 	text-align: center;
 	clear: both;
 }
-
+/*experimento, não está sendo usado realmente*/
 .botaodestaque{
 	box-shadow: 2px 2px 3px #000;
 	text-shadow: -2px 1px 2px #000;
@@ -82,15 +90,19 @@ body {
 	text-align: center;
 	float: left;
 }
+/*class de bloco de div responsável por auxiliar na margen e geração do formato de layout GRID */
 .servicodiv{
     margin: 20px auto 20px auto;
 }
 
-.conteudo {
+/*.conteudo {
 	clear: both;
 	background-color: #fff;
 }
+*/
 
+/*//footer da página, normalmente contem informações da empresa, contato e outros dados. 
+No nosso caso somente o nome dos criadores*/
 .rodape {
 	background: #353637;
 	height: 50px;
@@ -100,6 +112,7 @@ body {
 	clear: both;
 }
 
+/*class responsável por manipular o estilo dos botões principais do site, incluindo os botões do menu HEADER*/
 .btn-group .button {
 	background-color: #000;
 	border: none;
@@ -112,45 +125,47 @@ body {
 	font-size: 16px;
 	cursor: pointer;
   }
-  
+  /*classe responsável por deixar no mesmo hexadecimal da Logo Marca ao passar o mouse em cima*/
   .btn-group .button:hover {
-	background-color: #5e6769;
+	background-color: #65a995;
   }
-
+/*classe responsável pela div das transições*/
   .mySlides {
 	  display: none;
 	  height: 100%;
 	  width: 100%;
 	}
 
-	.section, .code {
-		margin-bottom: 16px!important;
-	}
-
+/*class responsável pelo texto de explicação da loja*/
 	.textosobre{
 		text-align: center;
 	}
-
+/*classe responsável pela borda das imagens da LISTA DE PRODUTOS e pelo espaçamento entre os ELEMENTOS DA LISTA*/
 	.imagem{
 		margin: 3px auto;
 		border: 1px;
 
 	  }
-
+/*classe responsável pela DIV que contem a segunda imagem oculta do mesmo ITEM/PRODUTO*/
 	.imagemsecundaria{
 		opacity:0;
 		transition: opacity .2s linear;
 	 }
-	  
+	  /*classe responsável pelo  EFEITO DE "TRANSIÇÃO" da PRIMEIRA IMAGEM para a SEGUNDA IMAGEM de um mesmo PRODUTO*/
 	  .imagem:hover .imagemsecundaria{
 		opacity:1;
 	   }
 
-	   .holder {
+
+	/*.section, .code {
+		margin-bottom: 16px!important;
+	}*/
+
+/*	   .holder {
 		display: flex;
 		justify-content: center;
 	}
-
-	.fcenter{
+*/
+/*	.fcenter{
 		text-align: center;
-	}
+	}*/
