@@ -1,103 +1,204 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-	<title>Minha p�gina</title>
+	<meta charset="UTF-8">
+	<meta content="text/html; charset=iso-8859-2" http-equiv="Content-Type">´
 	<link rel="stylesheet" type="text/css" href="grid.css">
 	<link rel="stylesheet" type="text/css" href="estilos.css">
+	<title>JBTech</title>
 </head>
-<body>
 
+<body>
 	<div id="container">
-		<div class="linha fundomenu">
+		<div class="linha fundomenucadastro">
 			<div class="c3 logo">
-				<img src="images/logo.png">
+				<a href="#">
+					<img src="produtos/logo.png">
+				</a>
 			</div>
-			<div class="c2 tright menu">
-				<li><a href="http://unisociesc.com.br/">HOME</a></li>
+			<div class="tright menucadastro btn-group">
+				<a href="#">
+					<button class="button">Home</button>
+				</a>
 			</div>
-			<div class="c2 tright menu">
-				<li><a href="http://unisociesc.com.br/">SOBRE</a></li>
-			</div>
-			<div class="c2 tright menu">
-				<li><a href="http://unisociesc.com.br/">BLOG</a></li>
-			</div>
-			<div class="c2 tright menu">
-				<li><a href="http://unisociesc.com.br/">CONTATO</a></li>
+			<div class="tright menucadastro btn-group">
+				<button class="button">Cadastro</button>
 			</div>
 		</div>
+
+		<div class="borda">
+		</div>
+
+		<div class="linha fundomenu">
+			<div class="menu btn-group">
+				<a href="#">
+					<button class="button">Principal</button>
+				</a>
+				<a href="#produtos">
+					<button class="button">Consulta</button>
+				</a>
+				<a href="#sobre">
+					<button class="button">Sobre</button>
+				</a>
+				<a href="#contato">
+					<button class="button">Contato</button>
+				</a>
+			</div>
+		</div>
+
+		<div class="borda">
+		</div>
+
 		<div class="linha destaque">
-			<div class="c12 tcenter">
-				<h2>N�s somos a webpaint </h2>
-				uma empresa e midia interativa, desenvolvemos sites <br>
-				aplicativos mobile, web sites, folders, videos institucional <br>
-				<input class="botaodestaque" type="submit" name="SaibaMais" value="Saiba Mais">
+			<div class="secao">
+				<img class="mySlides" src="produtos/Banner01.png">
+				<img class="mySlides" src="produtos/Banner02.png">
+				<img class="mySlides" src="produtos/Banner03.png">
 			</div>
 		</div>
+
+		<script>
+			var myIndex = 0;
+			carousel();
+
+			function carousel() {
+				var i;
+				var x = document.getElementsByClassName("mySlides");
+				for (i = 0; i < x.length; i++) {
+					x[i].style.display = "none";
+				}
+				myIndex++;
+				if (myIndex > x.length) { myIndex = 1 }
+				x[myIndex - 1].style.display = "block";
+				setTimeout(carousel, 2000); // Mostra uma nova imagem a cada 2 segundos
+
+				$("#button").click(function () {
+					$('html, body').animate({
+						scrollTop: $("#sobre").offset().top
+					}, 2000);
+				});
+
+				$("#button").click(function () {
+					$('html, body').animate({
+						scrollTop: $("#produtos").offset().top
+					}, 2000);
+				});
+			}
+		</script>
+
+		<div>
+			<a name="produtos">
+				<div class="titulonegrito">
+					Nossos Produtos
+				</div>
+			</a>
+		</div>
+
+		<div>
+			<div class="c3 imagem" style="background-image: url(produtos/Produto01.jpg)">
+				<div class="imgConteudo imagemsecundaria">
+					<img src="produtos/ProdutoHover01.jpg">
+				</div>
+			</div>
+		</div>
+		<div>
+			<div class="c3 imagem" style="background-image: url(produtos/Produto02.jpg)">
+				<div class="imgConteudo imagemsecundaria">
+					<img src="produtos/ProdutoHover02.jpg">
+				</div>
+			</div>
+		</div>
+		<div>
+			<div class="c3 imagem" style="background-image: url(produtos/Produto03.jpg)">
+				<div class="imgConteudo imagemsecundaria">
+					<img src="produtos/ProdutoHover03.jpg">
+				</div>
+			</div>
+		</div>
+		<div>
+			<div class="c3 imagem" style="background-image: url(produtos/Produto04.jpg)">
+				<div class="imgConteudo imagemsecundaria">
+					<img src="produtos/ProdutoHover04.jpg">
+				</div>
+			</div>
+		</div>
+		<div>
+			<div class="c3 imagem" style="background-image: url(produtos/Produto05.jpg)">
+				<div class="imgConteudo imagemsecundaria">
+					<img src="produtos/ProdutoHover05.jpg">
+				</div>
+			</div>
+		</div>
+		<div>
+			<div class="c3 imagem" style="background-image: url(produtos/Produto06.jpg)">
+				<div class="imgConteudo imagemsecundaria">
+					<img src="produtos/ProdutoHover06.jpg">
+				</div>
+			</div>
+		</div>
+		<div>
+			<div class="c3 imagem" style="background-image: url(produtos/Produto07.jpg)">
+				<div class="imgConteudo imagemsecundaria">
+					<img src="produtos/ProdutoHover07.jpg">
+				</div>
+			</div>
+		</div>
+		<div>
+			<div class="c3 imagem" style="background-image: url(produtos/Produto08.jpg)">
+				<div class="imgConteudo imagemsecundaria">
+					<img src="produtos/ProdutoHover08.jpg">
+				</div>
+			</div>
+		</div>
+
+		<div class="linha titulo">
+			<a name="sobre">
+				<div class="">
+					Sobre a JBTech
+				</div>
+			</a>
+		</div>
+
+		<div class="linha servico">
+			<div class="textosobre tcenter">
+				<p>Marketplace focado em vendas online de acessórios para o setor de informática.
+					<br>À missão de oferecer sempre os melhores produtos e acessórios de sua necessidade.
+				</p>
+			</div>
+		</div>
+		
 		<div class="linha servico">
 			<div class="c4 servicodiv tcenter">
-				<img src="images/androidIco.png"> <br>
-				<h3>Mobile</h3>
-				<p>Bacon ipsum dolor amet leberkas beef pastrami, prosciutto capicola jerky pig. Fatback swine ham, ground round meatball short ribs flank hamburger</p>
+				<img src="produtos/mouse.png">
+				<div class="titulo">
+					Acessórios
+				</div>
+				<p>Temos os melhores acessórios das marcas mais quentes da atualidade disponíveis para você.</p>
 			</div>
 			<div class="c4 servicodiv tcenter">
-				<img src="images/siteIco.png"> <br>
-				<h3>Sites</h3>
-				<p>Bacon ipsum dolor amet leberkas beef pastrami, prosciutto capicola jerky pig. Fatback swine ham, ground round meatball short ribs flank hamburger</p>
+				<img src="produtos/gabinete.png">
+				<div class="titulo">
+					Gabinetes Personalizados
+				</div>
+				<p>As melhores máquinas com o máximo de desempenho para você encarar seus desafios</p>
 			</div>
 			<div class="c4 servicodiv tcenter">
-				<img src="images/fotografiaIco.png"> <br>
-				<h3>Fotografia</h3>
-				<p>Bacon ipsum dolor amet leberkas beef pastrami, prosciutto capicola jerky pig. Fatback swine ham, ground round meatball short ribs flank hamburger</p>
-			</div>
-		</div>
-		<div class="linha titulo">
-			<div class="c12 tcenter"> 
-				Conhe�a nossos trabalhos ;)
-			</div>
-		</div>
-		<div class="linha conteudo">
-			<div class="c3">
-				<div class="imgConteudo"><img src="images/trabalho01.jpg"></div>
-			</div>
-			<div class="c3">
-				<div class="imgConteudo"><img src="images/trabalho02.jpg"></div>
-			</div>
-			<div class="c3">
-				<div class="imgConteudo"><img src="images/trabalho03.jpg"></div>
-			</div>
-			<div class="c3">
-				<div class="imgConteudo"><img src="images/trabalho04.jpg"></div>
-			</div>
-			<div class="c3">
-				<div class="imgConteudo"><img src="images/trabalho05.jpg"></div>
-			</div>
-			<div class="c3">
-				<div class="imgConteudo"><img src="images/trabalho06.jpg"></div>
-			</div>
-			<div class="c3">
-				<div class="imgConteudo"><img src="images/trabalho07.jpg"></div>
-			</div>
-			<div class="c3">
-				<div class="imgConteudo"><img src="images/trabalho08.jpg"></div>
-			</div>
-			<div class="c3">
-				<div class="imgConteudo"><img src="images/trabalho09.jpg"></div>
-			</div>
-			<div class="c3">
-				<div class="imgConteudo"><img src="images/trabalho10.jpg"></div>
-			</div>
-			<div class="c3">
-				<div class="imgConteudo"><img src="images/trabalho11.jpg"></div>
-			</div>
-			<div class="c3">
-				<div class="imgConteudo"><img src="images/trabalho12.jpg"></div>
+				<img src="produtos/cadeira.png">
+				<div class="titulo">
+					Cadeiras
+				</div>
+				<p>As cadeiras perfeitas para suas gameplays e streams com o maior conforto disponibiliazando melhores experiências</p>
 			</div>
 		</div>
 	</div>
+
 	<div class="linha rodape">
 		<div class="c12 tcenter">
-			Todos os direitos reservados
+			Bruno da Paz e Julio Muller
 		</div>
 	</div>
+
 </body>
+
 </html>

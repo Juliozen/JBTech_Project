@@ -8,9 +8,20 @@ body {
 	width: 80%;
 	background-color: #fff;
 }
-.menu {
+.menucadastro {
 	height: 50px;
 	float: right;
+}
+.menu {
+	height: 50px;
+	float: left;
+}
+.borda{
+	padding: 1px;
+}
+.fundomenucadastro{
+	background-color: #000;
+	height: 60px;
 }
 .fundomenu{
 	background-color: #000;
@@ -41,18 +52,15 @@ body {
 
 .logo{
 	float: left;
-	margin-top: 10px;
-	margin-left: 20px;
+	margin-top: 5px;
+	margin-left: 25px;
 }
 
 .destaque {
 	background: #353637;
-	height: 330px;
 	font-size: 25px;
 	color: #fff;
 	text-align: center;
-	line-height: 45px;
-	padding-top: 15px;
 	clear: both;
 }
 
@@ -75,26 +83,12 @@ body {
 	float: left;
 }
 .servicodiv{
-	margin-top: 40px;
-	width: 30%;
-	margin-left: 20px;
-}
-.titulo {
-	height: 100px;
-	line-height: 100px;
-	font-size: 26px;
-	text-align: center;
-	clear: both;
+    margin: 20px auto 20px auto;
 }
 
 .conteudo {
 	clear: both;
 	background-color: #fff;
-}
-
-.imgConteudo {
-	float: left;
-	margin: 5px;
 }
 
 .rodape {
@@ -106,5 +100,57 @@ body {
 	clear: both;
 }
 
+.btn-group .button {
+	background-color: #000;
+	border: none;
+	color: white;
+	padding: 15px 32px;
+	height: 60px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	cursor: pointer;
+  }
+  
+  .btn-group .button:hover {
+	background-color: #5e6769;
+  }
 
+  .mySlides {
+	  display: none;
+	  height: 100%;
+	  width: 100%;
+	}
 
+	.section, .code {
+		margin-bottom: 16px!important;
+	}
+
+	.textosobre{
+		text-align: center;
+	}
+
+	.imagem{
+		margin: 3px auto;
+		border: 1px;
+
+	  }
+
+	.imagemsecundaria{
+		opacity:0;
+		transition: opacity .2s linear;
+	 }
+	  
+	  .imagem:hover .imagemsecundaria{
+		opacity:1;
+	   }
+
+	   .holder {
+		display: flex;
+		justify-content: center;
+	}
+
+	.fcenter{
+		text-align: center;
+	}

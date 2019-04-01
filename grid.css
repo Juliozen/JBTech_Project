@@ -43,6 +43,32 @@
 	text-align: justify;
 }
 
+.mySlides {
+	display: none;
+}
 
+.titulonegrito {
+    color: #000;
+    font-size: 24px;
+    text-transform: uppercase;
+    text-align: center;
+    display: block;
+    border-bottom: 1px solid #e5e5e5;
+    width: 300px;
+    margin: 30px auto 30px auto;
+    font-weight: 600;
+}
 
-
+.titulo {
+	height: 100px;
+	line-height: 100px;
+	text-align: center;
+	clear: both;
+	color: #000;
+    font-size: 24px;
+    display: block;
+    border-bottom: 1px solid #e5e5e5;
+    width: 300px;
+    margin: 0px auto 10px auto;
+    font-weight: 600;
+}
